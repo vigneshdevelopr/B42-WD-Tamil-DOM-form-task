@@ -4,10 +4,10 @@ const table = document.getElementById('table');
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  const firstName = document.getElementById('validationCustom01').value;
-  const lastName = document.getElementById('validationCustom02').value;
-  const address = document.getElementById('validationCustom03').value;
-  const pincode = document.getElementById('validationCustom06').value;
+  const firstName = document.getElementById('first-name').value;
+  const lastName = document.getElementById('last-name').value;
+  const address = document.getElementById('address').value;
+  const pincode = document.getElementById('pin').value;
   const gender = document.querySelector('input[name="gender"]:checked').value;
 
   var checkboxes = form.querySelectorAll('input[name="food"]');
@@ -23,8 +23,8 @@ form.addEventListener('submit', (event) => {
     food.push(element.value);
   }
 }
-  const state = document.getElementById('validationCustom04').value;
-  const country = document.getElementById('validationCustom05').value;
+  const state = document.getElementById('state').value;
+  const country = document.getElementById('countries').value;
 
   const row = document.createElement('tr');
   row.innerHTML = `
